@@ -10,9 +10,6 @@ router.get('/', (req, res) => {
     Category.find({include: [Product]})
       res.json(categoryData);
     });
-
-  // be sure to include its associated Products
-  //uhhhhhhh ???????????
 });
 
 router.get('/:id', (req, res) => {
@@ -21,9 +18,6 @@ router.get('/:id', (req, res) => {
     Category.find({include: [Product]})
     res.json(categoryData);
   });
-
-  // be sure to include its associated Products
-  //????????????????
 });
 
 router.post('/', (req, res) => {
