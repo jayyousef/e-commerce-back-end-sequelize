@@ -7,16 +7,20 @@ const { Category, Product } = require('../../models');
 router.get('/', (req, res) => {
   // find all categories
   Category.findAll().then((categoryData) => {
-    Category.find({include: [Product]})
+    Category.findAll({include: [Product]})
       res.json(categoryData);
+    }).catch((err) => {
+      res.json(err);
     });
 });
 
 router.get('/:id', (req, res) => {
   // find one category by its `id` value
   Category.findByPk(req.params.id).then((categoryData) => {
-    Category.find({include: [Product]})
+    Category.findAll({include: [Product]})
     res.json(categoryData);
+  })  .catch((err) => {
+    res.json(err);
   });
 });
 

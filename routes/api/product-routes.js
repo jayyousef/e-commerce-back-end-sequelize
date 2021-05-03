@@ -13,7 +13,7 @@ router.get('/', (req, res) => {
     {
       model: Tag, 
       through: ProductTag,
-      as: "product_id"
+      // as: "product_id2"
     }
   
   ]}).then((productData) => {
@@ -48,7 +48,8 @@ router.post('/', (req, res) => {
       product_name: "Basketball",
       price: 200.00,
       stock: 3,
-      tagIds: [1, 2, 3, 4]
+      tagIds: [1, 2, 3, 4],
+      category_id: 1
     }
   */
   Product.create(req.body)
