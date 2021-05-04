@@ -9,13 +9,13 @@
 4. [Contact](#contact)
 
 ## Description <a name="introduction"></a>
-This project will build a custom HTML file that returns the user responses of their team members using inquierer.
+This project will connect the front end ecommerce page to a back end using node and sequelize through express.
 
 ### Motivation
-This project is meant to help managers create an easy place to go where they can connect with their team members and have all their information in one easy-to-reach spot.
+Many Billions of dollars per year are spent online, and even more so since 2020. Those numbers are surely only going to increase. It's extremely important for small and medium sized businesses, especially, to be able to have a custom, robust solution for their businesses to sell online without relying solely on a template builder. This project demonstrates one relatively simple way to store products, tags, categories and more to a back end database which can be accessed anywhere and stores persistent data. 
 
 ### Problem Solved
-This app will help organize all employee information in one easy to access website with the ability to email them in one click of visit their github page.
+This app will help a small or medium sized business keep an inventory,price list, category list, and more in a database through express and node.
 	
 ## Installation <a name="installation"></a>
 1.  Clone or download .zip file from Github to your local computer
@@ -41,28 +41,29 @@ This app will help organize all employee information in one easy to access websi
 ## Usage
 After installing the project, make sure to navigate to the correct directory and run “npm init -y” and then “npm install” After you’ve got the project ready, simply run “node index.js” or “node .” Answer the questions as they appear in the terminal and you can find your new file in the 'dist' directory.
 
-[Click here for a video walkthrough](https://youtu.be/H7L9zCEHKfw)
+[Click here for a video walkthrough](https://youtu.be/svmy8eFR-Lw)
 
-[Click Here to see an example HTML page](./example-team.html)
+![Here is an example API request from Insomnia](./Assets/demo-01.gif)
 
 ## Credits
-* Inquirer Documentation
-* [Net Ninja](https://youtu.be/Ug4ChzopcE4) helped a bit with class buildling
-* [Stack Overflow](https://stackoverflow.com/questions/49862039/how-to-write-unit-tests-for-inquirer-js) helped with test writing
+* Sequelize Documentation
+* Kat Poulos was helpful in getting all the little parts put together
+* Mim for helping me talk through some of my syntax mistakes
+* We all work better when we work together!
 
 ## License 
 This project is licensed under the The MIT License. Click the link below to learn more about how you can use this project.
 [License: MIT](https://opensource.org/licenses/MIT)
 
 ## Features 
-The main features of this project are how it builds your HTML file based on the user input. Each employee will get their own box generated for easy viewing and a pleasing user experience. Future implementation will include icons for different types of employees.
+The main features of this project are how it connects the front end to the back end and sends and retrieves data. The next step in this project would be creating a beautiful front end with HTMl or a template builder like handlebars.
 
 ## Contribution Guidelines <a name="contributions"></a>
 The best way to contribute to this project is to fork the repo to your own GitHub profile and test new features or make adjustments yourself. I am naturally collaborative and would be grateful for any input.
 For more information see the [Contributor Covenant](https://www.contributor-covenant.org/)
 
 ## Test Instructions
-The tests in this project run test for the classes to make sure the new classes and their methods work properly. To run these tests, run "npm run test" and watch the magic happen.
+The testing in this project is done manually through an API application like Postman or Insomnia. If you watch the walkthrough video above you can see the information being passed back and forth, or you can try it yourself!
 
 ## Questions <a name="contact"></a>
 If you have any questions or issues you can find my github profile [here](www.github.com/jayyousef) => www.github.com/jayyousef
